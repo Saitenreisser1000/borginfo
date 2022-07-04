@@ -1,0 +1,25 @@
+/* the variables.scss file */
+
+.new-transition {
+    &-leave-active {
+      position: absolute;
+    }
+    &-enter-active, &-leave, &-leave-to {
+      transition: 8000ms; /* here you can define your desired time for transition */
+    }
+    &-enter, &-leave-to {
+      opacity: 0
+    }
+    }
+
+    .v-window {
+        &-x-transition,
+        &-x-reverse-transition,
+        &-y-transition,
+        &-y-reverse-transition {
+          &-enter-active,
+          &-leave-active {
+            transition: 3.1s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+          }
+        }
+      }
